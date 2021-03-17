@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { api } from '../../services/api';
 import { Container } from './styles';
 
 // import { Container } from './styles';
 
 const TransactionsTable: React.FC = () => {
+  useEffect(() => {
+    api.get('transactions')
+    .then(response => console.log(response.data));
+  }, []);
   return (
       <Container>
           <table>
@@ -30,7 +35,7 @@ const TransactionsTable: React.FC = () => {
                       <td>
                           Transfer to pay rent
                       </td>
-                      <td  className="withdrawal">R$1.000</td>
+                      <td  className="payment">R$1.000</td>
                       <td>Rent</td>
                       <td>01/02/2021</td>
                   </tr>
