@@ -1,3 +1,5 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
 
-export const Container = styles.form``;
+export const Container = styled.form`
+    h2 {}
+`;
