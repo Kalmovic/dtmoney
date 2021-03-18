@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
-import { Container } from '../components/TransactionsTable/styles';
+import { Container } from './styles';
 
 // import { Container } from './styles';
 
