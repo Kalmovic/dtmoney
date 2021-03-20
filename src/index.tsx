@@ -13,7 +13,7 @@ createServer({
           id: 1,
           title: 'Hamburguer',
           amount: 400,
-          type: 'payment',
+          type: 'outcome',
           category: 'food',
           createdAt: new Date(),
         }
