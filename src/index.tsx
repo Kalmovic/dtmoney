@@ -25,7 +25,7 @@ createServer({
           type: 'outcome',
           value: 1000,
           category: 'Home',
-          createdAt: new Date('2021-02-10 09=8:00:00'),
+          createdAt: new Date('2021-02-10 08:00:00'),
         }
       ]
     })
