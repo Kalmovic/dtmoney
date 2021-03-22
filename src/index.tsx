@@ -26,9 +26,9 @@ createServer({
           value: 1000,
           category: 'Home',
           createdAt: new Date('2021-02-10 08:00:00'),
-        }
-      ]
-    })
+        },
+      ],
+    });
   },
 
   routes() {
@@ -36,15 +36,15 @@ createServer({
 
     this.get('/transactions', () => {
       return this.schema.all('transaction');
-    })
+    });
 
     this.post('/transactions', (schema, request) => {
       const data = JSON.parse(request.requestBody);
 
       return schema.create('transaction', data);
-    })
-  }
-})
+    });
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>

@@ -7,11 +7,11 @@ import { Container } from './styles';
 
 const Dashboard: React.FC = () => {
   return (
-      <Container>
-  <Summary />
-  <TransactionsTable />
-      </Container>
+    <Container>
+      <Summary />
+      <TransactionsTable />
+    </Container>
   );
-}
+};
 
 export default Dashboard;
